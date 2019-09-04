@@ -1,0 +1,88 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", sans-serif; 
+}
+
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),  url(../src/retro_wave.jpg);
+	height: 100vh; 							/* WTF is that*/
+	background-size: cover; 				/* what is this atribute */
+	background-position: center;
+}
+
+.main-nav li
+{
+	margin-top: 30px;
+	padding-right: 25px;
+	display: inline-block;
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 50px;
+	margin-right: 50px;
+}
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 18px;
+}
+
+.main-nav li.active a
+{
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid #9b28a6;
+	border-radius: 15px;
+}
+
+.my_logo img
+{
+	width: 200px;
+	height: auto;
+	float: left;
+	margin: 40px 90px;
+}
+
+.main_btn
+{
+	padding-top: 225px;
+	text-align: center;
+}
+
+/*.main_btn p 
+{
+	display: inline-block;
+}*/
+
+.main_btn p a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.main_btn p a:hover
+{
+	border: 2px solid #7d1568;
+	border-radius: 20px;
+}
+
+.vid
+{
+	text-align: center;
+	margin-top: 40px;
+}
+
