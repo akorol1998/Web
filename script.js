@@ -1,46 +1,41 @@
-"Array".padStart(10);
-"Array".padEnd(10);
-
-const fun = (a,
-	b,
-	c,
-	d,
-	) => {
-	console.log(a);
-}
-
-
-let obj = {
-	usr:"Me",
-	name:"Artem",
-	Surname:"Pidr",
-	object:{inside:"hidden"}
-}
-
-Object.keys(obj).forEach((key, index)=>{
-	console.log(key, obj[key], index);
-});
-
-
-Object.values(obj).forEach(value => {
-	console.log(value);
-});
-
-
-Object.entries(obj).forEach(value => {
-	console.log(value);
-});
 
 
 
 
 
 
+// "Array".padStart(10);
+// "Array".padEnd(10);
+
+// const fun = (a,
+// 	b,
+// 	c,
+// 	d,
+// 	) => {
+// 	console.log(a);
+// }
 
 
+// let obj = {
+// 	usr:"Me",
+// 	name:"Artem",
+// 	Surname:"Pidr",
+// 	object:{inside:"hidden"}
+// }
+
+// Object.keys(obj).forEach((key, index)=>{
+// 	console.log(key, obj[key], index);
+// });
 
 
+// Object.values(obj).forEach(value => {
+// 	console.log(value);
+// });
 
+
+// Object.entries(obj).forEach(value => {
+// 	console.log(value);
+// });
 
 
 
