@@ -1,0 +1,127 @@
+
+/* LOGO color #F48F1D; */
+
+
+*{
+	margin:0px;	
+	padding:0px;	
+}
+
+.first-page{
+	line-height: 2.5em;
+	position: relative;
+	width:100%;
+	height:100vh;
+}
+
+/*#================ LOGO =================*/
+
+.logo{
+	/*width: 100%;*/
+	display:block;
+	padding:30px 0 30px 50px;
+	background-color: #ffffff;
+}
+
+.logo a{
+	letter-spacing: 0.3em;
+	text-decoration: none;
+	color:#F48F1D;
+}
+
+/*#================ FRONTIMAGE =================*/
+
+.cover_sect{
+	display:block;
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(../src/cover.jpeg);
+	height: 75vh;
+	background-size:cover;
+	background-position: center;
+}
+.nav-bar{
+	background:linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5));
+}
+
+ul{
+	margin-left: 30px;
+	list-style: none;
+}
+
+ .nav-li{
+ 	padding:15px 15px;
+ 	display: inline-block;
+ 	height: 100%;
+ }
+
+ .nav-li:hover{
+ 	background-color: rgba(172,92,2,0.7);
+ }
+
+ li a{
+ 	font-size:0.9em;
+ 	letter-spacing: 0.1em;
+ 	text-decoration: none;
+ 	color:black;
+ }
+
+ li a:hover{
+ 	color: #F8F6F3;
+ }
+ 
+h1{
+	color: #ffffff;
+	letter-spacing: 0.2em;
+	font-weight:initial;
+}
+h2{
+	color:#F48F1D;
+	font-weight:initial;
+
+}
+
+ .welcome{
+ 	position: absolute;
+ 	bottom: 150px;
+ 	right:100px;
+ }
+
+section{
+	
+}
+
+ .section-name{
+ 	margin:65px 0;
+ 	text-align:center;
+ 	font-size: 2em;
+ }
+
+ .card-block{
+ 	margin-top: 40px;
+ 	display: grid;
+ 	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+ 	height: 40vh;
+ }
+
+.card{
+	padding: 30px;
+	text-align:center;
+}
+
+ img{
+ 	width:60%;
+ 	margin:auto;
+ }
+
+.line{
+	width:30%;
+	margin: 10px auto 0 auto;
+	border: 2px solid #F48F1D;
+	border-radius: 50px;
+}
+
+.card_text{
+	padding: 10px;
+	margin-top:40px;
+	text-align: center;
+}
