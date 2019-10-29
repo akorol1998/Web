@@ -269,7 +269,12 @@ letter-spacing: 0.6px;
 	margin: 180px 0 20px 0;
 }
 
+.form .section-name h2{
+	color:white;
+}
+
 .contact-form{
+	background: url("../src/form_background.jpeg");
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -285,15 +290,16 @@ letter-spacing: 0.6px;
 	height: 30px;
 }
 
-.input_wrapper_box{
-	width:48%;
-	border-bottom:1px solid black;
-}
-.input_wrapper:nth-child(1){
+.input_wrapper:nth-child(1), .input_wrapper:nth-child(2) {
 	display:flex;
 	flex-direction: row;
 	border-bottom:none;
 	justify-content: space-between;
+}
+
+.input_wrapper_box{
+	width:48%;
+	border-bottom:1px solid black;
 }
 
 .txt_area{
@@ -304,5 +310,27 @@ letter-spacing: 0.6px;
 	border:none;
 	width:100%;
 	height: 100%;
+}
+
+.input_wrapper:nth-child(5){
+	height: auto;
+	border:1px solid #75452e;
+	border-radius: 2px;
+	width:150px;
+	align-self: flex-end;
+	background:#89553b;
+	color: white;
+}
+
+.submit-btn{
+	padding: 10px;
+}
+
+select{
+	/*-webkit-appearance: none;*/
+	background-color: transparent;
+	/*background: url(https://image.flaticon.com/icons/svg/60/60995.svg) 96% / 15% no-repeat;*/
+	/*outline: none;*/
+	/*-webkit-appearance: none;*/
 }
 
