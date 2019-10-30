@@ -218,7 +218,7 @@ letter-spacing: 0.6px;
 
 .numbers{
 	height:200px;
-	background: linear-gradient(rgba(27, 42, 49,0.9), rgba(27, 42, 49,0.9)), url("../src/background.jpg");
+	background: linear-gradient(rgba(3, 39, 43, 0.9), rgba(3, 39, 43, 0.9)), url("../src/background.jpg");
 	background-size: cover;
 	display:flex;
 	justify-content: center;
@@ -257,7 +257,8 @@ letter-spacing: 0.6px;
 }
 
 .form{
-	height:100vh;
+	background: linear-gradient(rgba(3, 39, 43, 0.9), rgba(3, 39, 43, 0.9)), url("../src/form_background.jpeg");
+	height:130vh;
 	width:auto;
 }
 
@@ -266,15 +267,19 @@ letter-spacing: 0.6px;
 }*/
 
 .form .section-name{
-	margin: 180px 0 20px 0;
+	margin:0;
+	padding: 180px 0 20px 0;
 }
 
 .form .section-name h2{
-	color:white;
+	color:#ffffff;
+}
+
+.form .description p{
+	color:#999797;
 }
 
 .contact-form{
-	background: url("../src/form_background.jpeg");
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -284,9 +289,23 @@ letter-spacing: 0.6px;
 	padding: 0 200px;
 }
 
+.contact-form input, select, textarea{
+	background:transparent;
+}
+.contact-form input::placeholder{
+	color: #999797;
+	/* #999797 */
+}
+
+.contact-form textarea::placeholder{
+	color: #999797;
+}
+.contact-form select{
+	color: #999797;
+}
+
 .input_wrapper{
-	/*background-color: yellow;*/
-	border-bottom:1px solid black;
+	border-bottom:1px solid #999797;
 	height: 30px;
 }
 
@@ -299,7 +318,7 @@ letter-spacing: 0.6px;
 
 .input_wrapper_box{
 	width:48%;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #999797;
 }
 
 .txt_area{
@@ -328,7 +347,6 @@ letter-spacing: 0.6px;
 
 select{
 	/*-webkit-appearance: none;*/
-	background-color: transparent;
 	/*background: url(https://image.flaticon.com/icons/svg/60/60995.svg) 96% / 15% no-repeat;*/
 	/*outline: none;*/
 	/*-webkit-appearance: none;*/
