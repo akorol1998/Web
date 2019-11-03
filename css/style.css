@@ -24,16 +24,17 @@
 }
 
 .logo a{
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 	text-decoration: none;
 	color:#F48F1D;
+	font-family: "Myriad Pro";
 }
 
 /*#================ FRONTIMAGE =================*/
 
 .cover_sect{
 	display:block;
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(../src/cover.jpeg);
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../src/cover.jpeg);
 	height: 75vh;
 	background-size:cover;
 	background-position: center;
@@ -54,15 +55,24 @@ ul{
  }
 
  .nav-li:hover{
- 	background-color: rgba(172,92,2,0.7);
+ 	/*background-color: rgba(172,92,2,0.7);*/
+ 	background-color: #819596;
+ 	color:black;
  }
 
  li a{
- 	font-size:0.9em;
- 	font-weight: bold;
+ 	width:100%;
+ 	height: 100%;
+ 	font-size:0.8em;
+ 	font-weight: 400;
  	letter-spacing: 0.1em;
  	text-decoration: none;
- 	color:black;
+ 	/*color:black;*/
+ 	color:#ffffff;
+ }
+
+ li a:hover{
+ 	color:inherit;
  }
 
 
@@ -81,46 +91,12 @@ ul{
 	width:100%;
 	margin:auto;
 }
-
-@media (max-width:750px){
-	li a{
-		font-size: 0.7em;
-	}
-	.nav-li{
-		padding: 10px 10px; 
-	}
-}
-
-@media (max-width:650px){
-	li a{
-		font-size: 0.5em;
-	}
-	.nav-li{
-		padding: 6px 6px; 
-	}
-}
-
-@media (max-width:550px){
-	/*ul li a{
-	
-	}*/
-	.nav-li{
-		display: none;
-		padding: 18px 10px; 
-	}
-	.icon{display: inline-block;}
-	.icon img{display: inline-block;}
-
-}
-
- li a:hover{
- 	color: #F8F6F3;
- }
  
 h1{
 	color: #ffffff;
-	letter-spacing: 0.2em;
-	font-weight:initial;
+	font-family: Baskerville;
+	font-weight: 400;
+	letter-spacing: 0.1em;
 }
 h2{
 	color:#F48F1D;
@@ -162,18 +138,26 @@ h2{
 }
 
  .card-block{
- 	margin: 80px 0 100px 0;
+ 	margin: 80px 0px 160px 0px;
  	padding: 0 40px;
  	display: flex;
  	justify-content: center;
+ 	flex-wrap:wrap;
  	/*grid-gap: 5px;*/
 	/*grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));*/
- 	height: 100vh;
+ 	/*height: 100vh;*/
  }
 
+.img-wrap{
+	padding: 20px;
+	height:350px;
+	/*width:250px;*/
+	text-align: center;
+
+}
 .card{
 	display:inline-block;
-	height: 400px;
+	height: 550px;
 	width: 300px;
 	/*padding: 10px;*/
 	text-align:center;
@@ -181,8 +165,8 @@ h2{
 }
 
  img{
- 	width:80%;
- 	height: 80%;
+ 	width:100%;
+ 	height: 100%;
  	margin:auto;
  }
 
@@ -223,6 +207,7 @@ letter-spacing: 0.6px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .numbers_box{
@@ -258,6 +243,9 @@ letter-spacing: 0.6px;
 
 .form{
 	background: linear-gradient(rgba(3, 39, 43, 0.9), rgba(3, 39, 43, 0.9)), url("../src/form_background.jpeg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
 	height:130vh;
 	width:auto;
 }
@@ -286,7 +274,7 @@ letter-spacing: 0.6px;
 	height:60vh;
 	margin-top:50px;
 	text-align:center;
-	padding: 0 200px;
+	padding: 0px 10em;
 }
 
 .contact-form input, select, textarea{
@@ -352,3 +340,38 @@ select{
 	/*-webkit-appearance: none;*/
 }
 
+@media (max-width:750px){
+	li a{
+		font-size: 0.7em;
+	}
+	.nav-li{
+		padding: 10px 10px; 
+	}
+	.contact-form{
+		padding: 0px 6em;
+	}
+}
+
+@media (max-width:650px){
+	li a{
+		font-size: 0.5em;
+	}
+	.nav-li{
+		padding: 6px 6px; 
+	}
+}
+
+@media (max-width:550px){
+	/*ul li a{
+	
+	}*/
+	.nav-li{
+		display: none;
+		padding: 18px 10px; 
+	}
+	.icon{display: inline-block;}
+	.icon img{display: inline-block;}
+	.contact-form{
+		padding: 0px 4em;
+	}
+}
