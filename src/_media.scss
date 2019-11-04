@@ -1,0 +1,35 @@
+@media (max-width:750px){
+	li a{
+		font-size: 0.7em;
+	}
+	.nav-li{
+		padding: 10px 10px; 
+	}
+	.contact-form{
+		padding: 0px 6em;
+	}
+}
+
+@media (max-width:650px){
+	li a{
+		font-size: 0.5em;
+	}
+	.nav-li{
+		padding: 6px 6px; 
+	}
+}
+
+@media (max-width:550px){
+	/*ul li a{
+	
+	}*/
+	.nav-li{
+		display: none;
+		padding: 18px 10px; 
+	}
+	.icon{display: inline-block;}
+	.icon img{display: inline-block;}
+	.contact-form{
+		padding: 0px 4em;
+	}
+}
