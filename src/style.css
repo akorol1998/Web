@@ -359,6 +359,91 @@ footer {
 #checkbox1:checked + .checkbox-label:after {
   color: black; }
 
+.ios-toggle2,
+.ios-toggle2:active {
+  position: absolute;
+  top: -5000px;
+  opacity: 0;
+  border: none;
+  outline: none; }
+
+.checkbox-label2 {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 36px;
+  height: 16px;
+  /*border-radius*/
+  border-radius: 18px;
+  background: #f8f8f8;
+  cursor: pointer; }
+
+.checkbox-label2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  line-height: 34px;
+  text-indent: 40px;
+  height: 36px;
+  width: 36px;
+  /*border-radius*/
+  border-radius: 100%;
+  top: 0px;
+  left: 0px;
+  right: auto;
+  background: white;
+  /*box-shadow*/
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd; }
+
+.checkbox-label2:after {
+  content: attr(data-off);
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -350px;
+  padding: 10px;
+  height: 100%;
+  width: 300px;
+  text-align: right;
+  color: black;
+  white-space: nowrap; }
+
+.ios-toggle2:checked + .checkbox-label2 {
+  /*box-shadow*/
+  -webkit-box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
+  box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11; }
+
+.ios-toggle2:checked + .checkbox-label2:before {
+  left: calc(100% - 36px);
+  /*box-shadow*/
+  -webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3); }
+
+.ios-toggle2:checked + .checkbox-label2:after {
+  content: attr(data-on);
+  color: black;
+  left: 60px;
+  width: 36px; }
+
+#checkbox2 + .checkbox-label2 {
+  /*box-shadow*/
+  -webkit-box-shadow: inset 0 0 0 0px #bfbf11, 0 0 0 2px #dddddd;
+  box-shadow: inset 0 0 0 0px #bfbf11, 0 0 0 2px #dddddd; }
+
+#checkbox2:checked + .checkbox-label2 {
+  /*box-shadow*/
+  -webkit-box-shadow: inset 0 0 0 18px #13bf11, 0 0 0 2px #13bf11;
+  box-shadow: inset 0 0 0 18px #bfbf11, 0 0 0 2px #bfbf11; }
+
+#checkbox2:checked + .checkbox-label2:after {
+  color: black; }
+
 :root {
   --helv_f:"Helvetica";
   --color_font_orange: #F48F1D;
