@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="./src/style.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="btn-wrapper">
+        <button type="button" class="btn btn-dark btn-usr bckgrnd" onclick="delUser()">Del user</button>
+        <button type="button" class="btn btn-dark btn-email bckgrnd" onclick="delEmail()">Del email</button>
+        <button type="button" class="btn btn-dark btn-pass bckgrnd" onclick="delPass()">Del pass</button>
+        <button type="button" class="btn btn-dark btn-color bckgrnd" onclick="delColor()">Del color</button>
+      </div>
+
+      <div id='user_box' class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">User</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder='Username'>
+      </div>
+      
+      <div id='email_box' class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Email</span>
+        </div>
+        <input type="email" name='phone' class="form-control" aria-label="Nothing" placeholder='Email' required>
+      </div>
+
+      <div id='pass_box' class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Password</span>
+        </div>
+        <input type="password" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder='Password'>
+      </div>
+      
+      <div id='color_box' class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Color</span>
+        </div>
+        <input type="color" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+      </div>
+    </div>
+    <script src='./js/script.js'></script>
+  </body>
+</html>

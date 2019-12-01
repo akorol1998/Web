@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+.sbm-btn[type=submit]{
+	display:inline-block;
+	background-color: #e3ecdb;
+}
+
+.wrapper{
+	height: 100vh;
+	padding: 5% 35%;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.btn-wrapper{
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:5px;
+	width: 100%;
+}
+
+.bckgrnd{
+	background:#2d44a4;
+}
