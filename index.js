@@ -3,7 +3,7 @@ const app = require("express")();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server);
 
-PORT = 80;
+PORT = 3000;
 
 
 app.get("/", (req, res)=>{
@@ -18,6 +18,6 @@ io.on("connection", (socket)=>{
 })
 
 
-server.listen(3000, ()=>{
+server.listen(PORT, "localhost", ()=>{
 	console.log("Hey")
 });

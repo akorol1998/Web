@@ -17,27 +17,27 @@
     <ul id="messages"></ul>
     <form action="" id='sendM'>
       <input id="m" autocomplete="off" /><button>Send</button>
-	</form>
-	<script src='/socket.io/socket.io.js'></script>
-	<script>
-		var socket = io();
-		 function sendMessage (e){
-			e.preventDefault();
-			socket.emit("chat message", message.value);
-			message.value = '';
-			return false;
-		};
+    </form>
+    <script src='/socket.io/socket.io.js'></script>
+    <script>
+         var socket = io();
+         function sendMessage (e){
+            e.preventDefault();
+            socket.emit("chat message", message.value);
+            message.value = '';
+            return false;
+        };
 
-		socket.on("chat message",(mesg)=>{
-			let li = document.createElement("LI");
-			let txt = document.createTextNode(mesg);
-			li.appendChild(txt);
-			messages.appendChild(li);
-		});
-		
-		var message = document.getElementById('m');
-		form = document.getElementById('sendM');
-		form.addEventListener('submit', sendMessage)
-	</script>
+        socket.on("chat message",(mesg)=>{
+            let li = document.createElement("LI");
+            let txt = document.createTextNode(mesg);
+            li.appendChild(txt);
+            messages.appendChild(li);
+        });
+        
+        var message = document.getElementById('m');
+        form = document.getElementById('sendM');
+        form.addEventListener('submit', sendMessage)
+    </script>
   </body>
 </html>
